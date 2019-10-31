@@ -7,7 +7,7 @@
     "dev": "next",
     "build": "next build",
     "export": "next export",
-    "deploy": "cd out && now --public"
+    "deploy": "npm run build && npm run export"
   },
   "keywords": [],
   "author": "",
