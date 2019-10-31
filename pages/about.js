@@ -11,6 +11,7 @@ const about = () => {
         <div>
             <Head>
                 <title> About - Ajay Yadav</title>
+                <link rel="shorcut icon" href="../static/favicon.png" />
             </Head>
             <button className="menu-btn" onClick={ () => setMenu(!menu) }>
                 <i class="fas fa-bars"></i>
