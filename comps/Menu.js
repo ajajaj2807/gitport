@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import '../styles/main.scss'
 
 const Menu = (props) => {
     return (
