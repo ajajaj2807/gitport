@@ -1,7 +1,8 @@
 import Menu from '../comps/Menu'
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import '../styles/about.scss'
 import Head from 'next/head'
+import Fade from 'react-reveal/Fade'
 
 const about = () => {
     
@@ -19,15 +20,60 @@ const about = () => {
             { menu ? <Menu close= { () => setMenu(!menu) } /> : <> </>}
             
             <div className="about-wrapper">
-                <h2>About Me</h2>
-                <p>
-                    My name is Ajay Kumar Yadav. I am a 2nd year Undergraduate at the department of Agricultural and Food Enginnering
-                    at Indian Institute of Technology, Kharagpur. I love to code in my free time. I have had a keen interest in coding and web development since an early age.
-                    I try to make simple, responsive and pleasing to the eye User Interfaces and soothing User Experience. <br/>
-                    My skills include C, Python, CSS3, JS and MERN Stack with NextJS. Apart from these, I am very well familiar with latest trends
-                    in web like PWA, SSR, SEO and many more. I love to take new coding challenges on the 
-                    internet. I am currently diving deep into Machine Learning in Python with TensorFlow and Keras.
-                </p>
+                <div className="card-80 about-intro">
+                <span className="big-title">
+                    <Fade bottom big cascade>
+                    So, you want to know about me? <br/>
+                    Let's dive in!
+                    </Fade>
+                </span>
+                </div>
+                <div className="card-80 about-name">
+                <img src="../static/about-01.svg" />
+                <Fade right>
+                
+                        <div className="an-text">
+                        <span className="big-title">
+                        My name is Oliver Queen <br/>
+                        </span>
+                        <span>
+                            Just kidding! My parents named me Ajay
+                        </span>
+                        </div>
+                </Fade>
+                </div>
+                
+                <div className="card-80 about-edu">
+                <img src="../static/about-02.svg" />
+                <Fade left>
+                
+                        <div className="an-text">
+                        <span className="big-title">
+                        I'm a student! <br/>
+                        </span>
+                        <span>
+                            I am a 2nd year Undergraduate studying at 
+                            Indian <br/> Institute of Technology, Kharagpur
+                        </span>
+                        </div>
+                </Fade>
+                </div>
+                <div className="card-80 about-int">
+                <img src="../static/about-03.svg" />
+                <Fade right>
+                
+                        <div className="an-text">
+                        <span className="big-title">
+                        I love good music <br/>
+                        </span>
+                        <span className="about-subs">
+                             I like to code and listen to good <br/>
+                             beats whenever, wherever 
+                        </span>
+                        </div>
+                </Fade>
+                </div>
+                
             </div>
         </div>
     )
