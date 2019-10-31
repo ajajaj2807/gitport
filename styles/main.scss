@@ -225,3 +225,33 @@ body{
         border-radius: 0;
     }
 }
+
+@media only screen and (max-width: 600px) {
+    .main-content{
+        max-width: 100%;
+        top:50%;
+        left: 0;
+    }
+    .name{
+        border-bottom: none !important;
+    }
+    .menu-btn{
+        top:32px;
+        right: 36px;
+    }
+    .menu-container{
+        flex-direction: column;
+    }
+    .menu-info{
+        bottom:0 !important;
+        left: 4em !important;
+    }
+    .close-btn{
+        top:32px !important;
+        right: 36px !important;
+    }
+    .nav-items{
+        top:2em !important;
+        left: 1em !important;
+    }
+  }
