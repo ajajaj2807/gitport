@@ -1,4 +1,5 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css');
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap');
 
 *{
     box-sizing: border-box;
@@ -7,7 +8,7 @@
 body{
     padding: 0;
     margin: 0;
-    font-family: 'Helvetica', sans-serif;
+    font-family: 'Poppins','Helvetica',sans-serif;
 }
 
 
@@ -64,11 +65,11 @@ body{
                 position: absolute;
                 display: block;
                 content:'-';
-                left: -0.4em;
+                left: -0.6em;
                 transition: all ease 0.2s;
             }
             &:hover::before{
-                left: 0.1em;
+                left: 0;
             }
         }
     }
