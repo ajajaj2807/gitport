@@ -22,7 +22,7 @@ const Index = () => {
     </div> : 
     <div>
         <Head>
-            <title>[dev] Ajay Yadav</title>
+            <title>[dev] Home - Ajay Yadav</title>
         </Head>
         <div className="main-content">
             <span className="greet">
