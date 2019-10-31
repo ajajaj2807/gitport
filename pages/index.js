@@ -1,4 +1,3 @@
-import Link from 'next/link'
 import Head from 'next/head'
 import '../styles/main.scss'
 import { useState, useEffect } from 'react'
@@ -23,7 +22,7 @@ const Index = () => {
     </div> : 
     <div>
         <Head>
-            <title>Ajay Yadav</title>
+            <title>[dev] Ajay Yadav</title>
         </Head>
         <div className="main-content">
             <span className="greet">
