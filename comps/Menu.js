@@ -31,18 +31,10 @@ const Menu = (props) => {
             </div>
             </div>
             <div className="nav-items">
-                <Link href="/">
-                    <a>Home</a>
-                </Link>
-                <Link href="/about">
-                    <a>About</a>
-                </Link>
-                <Link href="/cv">
-                    <a>Curriculum Vitae</a>
-                </Link>
-                <Link href="/work">
-                    <a>Work</a>
-                </Link>
+                <a href="/">Home</a>
+                <a href="/about">About</a>
+                <a href="/cv">Curriculum Vitae</a>
+                <a href="/work">Work</a>
             </div>
         </div>
     )
