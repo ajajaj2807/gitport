@@ -23,7 +23,7 @@ const Index = () => {
     <div>
         <Head>
             <title>Home - Ajay Yadav</title>
-            <link rel="shorcut icon" href="../static/favicon.png" />
+            <link rel="shorcut icon" href="../static/aj-logo.svg" />
         </Head>
         <div className="main-content">
             <span className="greet">
