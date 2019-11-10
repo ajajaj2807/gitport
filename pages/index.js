@@ -13,6 +13,7 @@ const Index = () => {
     <div className="body-container">
       <Head>
         <title>Blog Under Construction</title>
+        <link rel="shortcut icon" href="../static/aj-logo.svg" />
       </Head>
       <Header />
       <Collab />
