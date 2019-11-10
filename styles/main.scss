@@ -70,13 +70,20 @@ html {
   width: 100%;
   background: #03dac6;
   margin-top: 50px;
-  padding: 4em 2em;
+  padding: 5em 2em;
   display: flex;
   justify-content: space-around;
   align-items: center;
   .info {
     h2 {
       font-size: 2em;
+    }
+    h1 {
+      font-size: 2.8em;
+      line-height: 1em;
+    }
+    .see-all-info {
+      font-size: 1.1em;
     }
   }
 }
@@ -94,7 +101,7 @@ html {
     cursor: pointer;
     opacity: 0.95;
     transform: translateY(-0.06em);
-    box-shadow: 0px 6px 18px 0 rgba($color: #000000, $alpha: 0.3);
+    box-shadow: 0px 6px 12px 0 rgba($color: #000000, $alpha: 0.25);
   }
 }
 
@@ -169,4 +176,108 @@ html {
   background: #03dac6;
   max-width: 320px;
   padding: 1em 1.4em;
+}
+.footer-wrapper {
+  text-align: center;
+  margin: 5em 0;
+  h1 {
+    font-size: 2.4em;
+  }
+  h3 {
+    color: #666666;
+    font-weight: 600;
+  }
+  p {
+    margin: 2em 0;
+  }
+}
+
+.love {
+  color: #e44;
+}
+
+.modal-wrapper {
+  z-index: 2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background: transparent;
+  .modal-close {
+    cursor: pointer;
+    opacity: 0.8;
+    position: absolute;
+    right: 25px;
+    top: 20px;
+    font-size: 1.6em;
+    overflow: hidden;
+  }
+  .modal-overlay {
+    z-index: 2;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: rgba($color: #212121, $alpha: 0.5);
+  }
+  .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 4em;
+    z-index: 3;
+    height: 550px;
+    background: #fff;
+    .msg-sent-box {
+      height: max-content;
+      width: max-content;
+      position: relative;
+      top: 50%;
+      text-align: center;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      h2 {
+        line-height: 1.2em;
+      }
+      p {
+        padding: 1em 0;
+      }
+    }
+    .modal-form-container {
+      margin-top: 2em;
+      width: 500px;
+      input {
+        border: none;
+        margin-top: 10px;
+        width: 100%;
+        background: #f2f2f2;
+        padding: 12px 10px;
+        width: 100%;
+        &::placeholder {
+          color: #333;
+          font-family: "Poppins", sans-serif;
+        }
+        &:focus {
+          outline: none;
+        }
+      }
+      textarea {
+        margin-top: 10px;
+        resize: none;
+        border: none;
+        width: 100%;
+        background: #f2f2f2;
+        height: 150px;
+        padding: 8px 10px;
+        &::placeholder {
+          color: #333;
+          font-family: "Poppins", sans-serif;
+        }
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+  }
 }

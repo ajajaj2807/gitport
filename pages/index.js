@@ -5,6 +5,8 @@ import Head from "next/head";
 import Header from "../comps/Header";
 import Collab from "../comps/Collab";
 import HomeContent from "../comps/HomeContent";
+import AllPosts from "../comps/AllPosts";
+import Footer from '../comps/Footer'
 
 const Index = () => {
   return (
@@ -15,6 +17,8 @@ const Index = () => {
       <Header />
       <Collab />
       <HomeContent />
+      <AllPosts />
+      <Footer />
     </div>
   );
 };
