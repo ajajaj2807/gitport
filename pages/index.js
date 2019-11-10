@@ -9,6 +9,7 @@ const Index = () => {
     <div className="body-container">
       <Head>
         <title>Blog Under Construction</title>
+      </Head>
       <Header />
       <Collab />
       <HomeContent />
