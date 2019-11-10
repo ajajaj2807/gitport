@@ -99,7 +99,7 @@ html {
 }
 
 .hc-wrapper {
-  margin-top: 2em;
+  margin-top: 3em;
   display: flex;
   justify-content: space-between;
 }
@@ -139,19 +139,21 @@ html {
 }
 
 .subs-button {
-    width: 100% !important;
-    margin-top: 0.8em;
-  }
+  width: 100% !important;
+  margin-top: 0.8em;
+}
 
 .latest-post-c {
   margin: 1em 0;
   padding: 1em;
-  border: 3px solid #3700b3;
+  background: #f6f6f6;
   h2 {
-    color: #3700b3;
+    color: #212121;
+    font-weight: 600;
     line-height: 1.2em;
   }
   .author-info {
+    margin-top: 10px;
     color: #212121;
     font-weight: 400;
   }

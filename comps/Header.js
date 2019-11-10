@@ -6,7 +6,7 @@ export default function Header() {
       <div className="logo">AJ</div>
       <div className="search-wrapper">
         <div className="input-wrapper">
-          <i class="fas fa-search"></i>
+          <i className="fas fa-search"></i>
           <input type="text" placeholder="Search"></input>
         </div>
         <div className="user-avatar"></div>
