@@ -18,7 +18,7 @@ const about = () => {
       {menu ? <Menu close={() => setMenu(!menu)} /> : <> </>}
 
       <div className="about-wrapper">
-        <h2>Under Construction</h2>
+        <h2>Page Under Construction</h2>
       </div>
     </div>
   );

@@ -35,7 +35,7 @@ const Menu = (props) => {
       <div className="nav-items">
         <a href="/">Home</a>
         <a href="/about">About</a>
-        <a href="/cv">Curriculum Vitae</a>
+        <a href={"/static/CV.pdf"}>Curriculum Vitae</a>
       </div>
     </div>
   );
