@@ -2,13 +2,19 @@ import Head from "next/head";
 import "../styles/main.scss";
 import { useState, useEffect } from "react";
 import Menu from "../comps/Menu";
+import axios from "axios";
 
 const Index = () => {
   const [menu, setMenu] = useState(0);
   const [loading, setLoading] = useState(1);
+  const [chuck, setChuck] = useState("");
+
   useEffect(async () => {
     setLoading(0);
+    const creq = await axios.get("https://api.chucknorris.io/jokes/random");
+    setChuck(creq.data);
   }, []);
+
   return loading ? (
     <div className="loading-splash">
       <div className="center">
@@ -54,6 +60,10 @@ const Index = () => {
           place.
         </span>
       </div>
+      <span className="cnj">
+        <br />
+        {chuck.value}
+      </span>
       <div className="landing-img">
         <img src="../static/hc01.png"></img>
       </div>

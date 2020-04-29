@@ -5,7 +5,7 @@ const Menu = (props) => {
     <div className="menu-container">
       <div className="close-btn" onClick={props.close}>
         <i class="fas fa-times"></i>
-      </div>
+      </div>  
       <div className="menu-info">
         <span className="mail">
           Send me a 'Hi!' at: <br /> <b>ajajaj2807@gmail.com</b>

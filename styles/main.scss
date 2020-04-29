@@ -11,6 +11,17 @@ body {
   font-family: "Poppins", "Helvetica", sans-serif;
 }
 
+.cnj {
+  z-index: 3;
+  padding: 0.6em;
+  position: absolute;
+  bottom: 2em;
+  left: 2em;
+  color: #262626;
+  font-size: 0.9em;
+  font-weight: 700;
+}
+
 .loading-splash {
   background: #f6f6f6;
   height: 100vh;
@@ -242,6 +253,11 @@ body {
   }
   .menu-container {
     flex-direction: column;
+  }
+  .cnj {
+    padding: 0.2em;
+    bottom: 0.2em;
+    left: 0.4em;
   }
   .landing-img {
     width: 100% !important;
