@@ -4,4 +4,4 @@
 # Redirect default Netlify subdomain to primary domain
 http://ajayrocks.netlify.com/* https://www.ajay.rocks/:splat 301!
 https://ajayrocks.netlify.com/* https://www.ajay.rocks/:splat 301!
-/details/* /details 200
+/details/* /details 200!
