@@ -15,9 +15,9 @@ const Card = ({ name, count, type }) => {
         <span className="count"> {count} </span>
       </div>
       <div className="details">
-        <a href={`details/${name}`} onClick={handleClick}>
+        {/* <a href={`details/${name}`} onClick={handleClick}>
           {type !== "country" ? "Details" : "View Global Cases"}
-        </a>
+        </a> */}
       </div>
     </div>
   );
