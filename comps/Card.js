@@ -5,7 +5,7 @@ const Card = ({ name, count, type }) => {
 
   const handleClick = (e) => {
     e.preventDefault();
-    router.push(`/details/${name}`);
+    router.push(`/details?q=${name}`);
   };
 
   return (
@@ -15,9 +15,9 @@ const Card = ({ name, count, type }) => {
         <span className="count"> {count} </span>
       </div>
       <div className="details">
-        {/* <a href={`details/${name}`} onClick={handleClick}>
+        <a href={`details?q=${name}`} onClick={handleClick}>
           {type !== "country" ? "Details" : "View Global Cases"}
-        </a> */}
+        </a>
       </div>
     </div>
   );

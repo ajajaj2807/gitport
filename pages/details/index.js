@@ -1,14 +1,14 @@
 import { useRouter } from "next/router";
 import { useState, useEffect } from "react";
 import axios from "axios";
-import "../../../styles/main.scss";
-import Loading from "../../../comps/Loading";
+import "../../styles/main.scss";
+import Loading from "../../comps/Loading";
 
 const Details = () => {
   const router = useRouter();
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);
-  const { id } = router.query;
+  const id = router.query["q"];
 
   useEffect(() => {
     const fetchData = async () => {
@@ -16,7 +16,6 @@ const Details = () => {
       setData(cdata.data);
       setLoading(false);
     };
-
     fetchData();
   }, [id]);
 
@@ -37,7 +36,6 @@ const Details = () => {
 
   return (
     <div className="details-wrapper">
-
       <span className="details-title"> {id} Cases</span>
       {data ? (
         <div className="list-cont">

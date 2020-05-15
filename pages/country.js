@@ -4,7 +4,6 @@ import "../styles/main.scss";
 import CountryDetails from "../comps/CountryDetails.js";
 
 const Country = () => {
-  const [data, setData] = useState([]);
   const [clist, setList] = useState([]);
   const [modclist, setMList] = useState([]);
   const [sq, setSearch] = useState("");
